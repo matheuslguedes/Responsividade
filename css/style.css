@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.main{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+header{
+    display: flex;
+    align-items: center;
+ 
+}
+header .logo{
+    width: 200px;
+}
+header .logo img{
+    width: 100%;
+}
+nav{
+    flex: 1;
+ 
+}
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul li {
+    list-style-type: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+header nav ul li a:hover{
+    color: #D8A997;
+}
+header .menu-icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 15px;
+    display: none;
+}
+header .menu-icon .ham{
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+.section-content{
+    display: flex;
+}
+.content-area{
+    flex: 1;
+}
+.content-area h1{
+    font-size: 45px;
+    color: #fff;
+    margin-top: 50px;
+}
+.content-area p{
+    color: #fff;
+    margin: 20px 0 40px 0;
+    padding: 0 30px 0 0;
+}
+.phones-area{
+    width: 500px;
+    text-align: center;
+}
+
+.phones-area .phone1{
+    height: 450px;
+    width: auto;
+    position: relative;
+    z-index: 1;
+    
+}
+.phones-area .phone2{
+    height: 460px;
+    width: auto;
+    position: relative;
+    margin-left: -100px;
+
+}
+.section-content{
+    margin-top: 30px;
+    
+}
+a.btn-saiba-mais{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #22C064;
+    font-weight: bold;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+a.btn-baixe{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color:   #0099DE;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media (max-width: 797px) {
+    a.btn-saiba-mais{
+        padding: 5px 15px;
+        margin-bottom: 10px;
+    }   
+    a.btn-baixe{
+        padding: 5px 15px;
+    }
+}
+@media (max-width: 780px) {
+    .section-content{
+        flex-direction: column;
+    }
+    .content-area{
+        text-align: center;
+    }
+    .phones-area{
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    body{
+        height: 100%;
+    }
+}
+
+@media (max-width: 690px){
+    header .menu-icon{
+        display: block;
+    }
+    header .logo{
+        margin: 0 auto;
+    }
+    nav{
+        display: none;
+    }
+}
+@media (max-width: 495px){
+    .content-area{
+        text-align: center;
+    }
+    body{
+        height: 100%;
+    }
+}
+
